@@ -24,7 +24,7 @@ stop_loss = current_price - (stop_loss_pips * pip_size)
 
 position_size = float("{:.2f}".format(risk_volume / stop_loss_pips))
 if position_size >= 10:
-    position_size = 10
+    position_size = float(10)
 
 # you code here
 request_buy = {
